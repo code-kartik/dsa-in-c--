@@ -8,7 +8,7 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        ans = ans ^ arr[i];
+        ans = ans ^ arr[i]; // XOR operation because XOR return 0 with same number
     }
 
     cout << ans << endl;
