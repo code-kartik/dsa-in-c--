@@ -6,6 +6,7 @@ int main()
 {
     vector<int> arr1 = {1, 2, 2, 2, 3, 3}, arr2 = {3, 3, 4, 4};
     vector<int>
+
         intersectingElement;
     int i = 0, j = 0;
 
