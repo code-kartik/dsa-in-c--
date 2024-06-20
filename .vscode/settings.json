@@ -3,6 +3,7 @@
     "files.associations": {
         ".env*": "dotenv",
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "unordered_set": "cpp"
     }
 }
