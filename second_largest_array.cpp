@@ -33,7 +33,6 @@ int betterSolution(vector<int> arr)
             largest = arr[i];
         }
     }
-
     for (int i = 0; i < arr.size(); i++)
     {
         if (arr[i] > sLargest && arr[i] != largest)
@@ -45,9 +44,26 @@ int betterSolution(vector<int> arr)
     return sLargest;
 }
 
+int optimalSolution(vector<int> arr)
+{
+    // Time Complexity: O(n)
+    int largest = arr[0], sLargest = INT_MIN;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] > largest)
+        {
+            sLargest = largest;
+            largest = arr[i];
+        }
+    }
+
+    return sLargest;
+}
+
 int main()
 {
     vector<int> arr{1, 4, 3, 5, 6, 6, 7, 3, 8};
     cout << "Brute Force: " << bruteForceSolution(arr) << endl;
     cout << "Better Solution: " << betterSolution(arr) << endl;
+    cout << "Optimal Solution: " << optimalSolution(arr) << endl;
 }
