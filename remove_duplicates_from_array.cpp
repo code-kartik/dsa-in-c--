@@ -6,6 +6,7 @@ using namespace std;
 
 unordered_set<int> bruteForceSolution(vector<int> arr)
 {
+    // Time Complexity: O(nlogn)
     unordered_set<int> set;
 
     for (int i = 0; i < arr.size(); i++)
@@ -17,6 +18,7 @@ unordered_set<int> bruteForceSolution(vector<int> arr)
 
 vector<int> optimalSolution(vector<int> v)
 {
+    // time complexity: O(n)
     vector<int> newArr;
     int i = 0;
     for (int j = 0; j < v.size(); j++)
